@@ -1,16 +1,72 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg:             #F5F3EE;
+  --bg-card:        #EDEAE2;
+  --accent:         #1A1814;
+  --accent-subtle:  #D4CFC4;
+  --text:           #1A1814;
+  --text-muted:     #6B6860;
+  --text-faint:     #A09D97;
+  --border:         rgba(26, 24, 20, 0.12);
+  --tag-bg:         #1A1814;
+  --tag-text:       #F5F3EE;
+
+
+  --text-hero:        clamp(3rem, 7vw, 5.5rem);   /* hero name */
+  --text-contact-h:   clamp(2rem, 5vw, 3.5rem);   /* contact headline */
+  --text-section:     2rem;                        /* section titles */
+  --text-project:     1.4rem;                      /* project name */
+  --text-nav-logo:    1.1rem;                      /* nav logo "Victor." */
+  --text-tagline:     1.05rem;                     /* hero tagline */
+  --text-body:        1rem;                        /* body copy */
+  --text-body-sm:     0.95rem;                     /* cert title, contact sub */
+  --text-detail:      0.9rem;                      /* about detail values */
+  --text-project-desc:0.92rem;                     /* project description */
+  --text-btn:         0.85rem;                     /* buttons, nav links */
+  --text-tag:         0.78rem;                     /* skill / stack tags */
+  --text-mono-md:     0.75rem;                     /* hero label, contact links */
+  --text-mono-sm:     0.72rem;                     /* skill card title, section num */
+  --text-mono-xs:     0.68rem;                     /* detail labels, cert org, project index */
+  --text-mono-xxs:    0.65rem;                     /* ds section labels */
+
+  /* ── Line Heights ── */
+  --leading-tight:    1.05;    /* hero name, contact headline */
+  --leading-snug:     1.2;     /* project name */
+  --leading-normal:   1.4;     /* cert title */
+  --leading-body:     1.65;    /* base body */
+  --leading-relaxed:  1.7;     /* tagline, nav links */
+  --leading-loose:    1.75;    /* project description */
+  --leading-spacious: 1.8;     /* about body copy */
+
+  /* ── Letter Spacing ── */
+  --tracking-tight:   -0.02em; /* hero name, contact headline */
+  --tracking-snug:    -0.01em; /* section titles, project names */
+  --tracking-normal:   0;
+  --tracking-wide:     0.02em; /* buttons */
+  --tracking-wider:    0.04em; /* nav links */
+  --tracking-widest:   0.06em; /* contact links */
+  --tracking-mono-sm:  0.08em; /* section numbers, project index */
+  --tracking-mono-md:  0.1em;  /* skill card titles, detail labels */
+  --tracking-mono-lg:  0.14em; /* hero label */
+
+  /* ── Font Weights ── */
+  --weight-light:    300;   /* tagline, body copy, project desc, hero label */
+  --weight-regular:  400;   /* body, nav links, detail values, tags */
+  --weight-medium:   500;   /* buttons, cert title, bold in body copy */
+
+
+  
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-dm-sans);
+  --font-mono: var(--font-dm-mono);
+  --font-serif: var(--font-dm-serif);
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -19,8 +75,165 @@
   }
 }
 
+*{
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="%23EDEAE2" stroke="%231A1814" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z"/></svg>') 0 0, auto !important;
+}
+/* Legacy plain CSS alternative for Option A */
+html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none;
+}
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  
+  /* cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23ff0055" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z"/></svg>') 0 0, auto; */
+}
+section{
+  margin:96px 0;
+}
+.logo{
+  font-family: var(--font-serif);
+  font-size: var(--text-section);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-snug);
+}
+.section-title{
+  font-weight: bold;
+  font-family: var(--font-serif);
+  font-size:3rem;
+  letter-spacing: var(--tracking-snug);
+}
+.cta{
+  font-size: var(--text-btn);
+  letter-spacing: var(--tracking-wide);
+  font-weight: var(--font-weight-medium);
+}
+
+.hero-title{
+  font-weight: bold;
+  font-family:var(--font-serif);
+  font-size:var(--text-hero);
+  line-height:var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+.label{
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-xs);
+  letter-spacing: var(--tracking-mono-md);
+  color: var(--text-muted);
+}
+.mono-label{
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-sm);
+  font-weight: var(--weight-light);
+  letter-spacing: var(--tracking-mono-md);
+  
+}
+.mono-sm{
+  font-family: var(--font-mono);
+  font-size: var(--text-mono-xs);
+  
+}
+
+.text-body{
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-spacious);
+}
+
+.project-desc{
+  font-size: var(--text-project-desc);
+  color: var(--text-muted);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-loose);
+}
+
+.project-name{
+  font-family: var(--font-serif);
+  font-size: var(--text-project);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-snug);
+  
+}
+.project-title{
+  font-size: var(--text-project);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-snug);
+}
+
+.card{
+  background-color: var(--bg-card);
+  padding: 1.5em;
+  border-radius: var(--radius-md);
+  
+}
+.card-title{
+  font-size: var(--text-mono-sm);
+  letter-spacing: var(--tracking-mono-sm);
+  color: var(--text-muted);
+  margin-bottom:1rem;
+}
+
+.tag{
+  font-size: var(--text-tag);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-tag);
+  color: var(--tag-text);
+  background-color: var(--tag-bg);
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+}
+.tag-light{
+  border:1px solid var(--border);
+  font-size: var(--text-tag);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-tag);
+  color: var(--text);
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+}
+
+.button{
+  font-size: var(--text-btn);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  padding: 0.5em 1.5em;
+  border-radius: var(--radius-md);
+  transition: background-color 0.3s, color 0.3s;
+}
+.button:hover{
+  background-color: var(--accent);
+  color: var(--bg);
+}
+.button-outline{
+  background-color: transparent;
+  color: var(--accent);
+}
+
+.contact-headline{
+  font-family: var(--font-serif);
+  font-size: var(--text-contact-h);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+}
+
+
+.custom-cursor{
+  cursor:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vdXNlLXBvaW50ZXIyLWljb24gbHVjaWRlLW1vdXNlLXBvaW50ZXItMiI+PHBhdGggZD0iTTQuMDM3IDQuNjg4YS40OTUuNDk1IDAgMCAxIC42NTEtLjY1MWwxNiA2LjVhLjUuNSAwIDAgMS0uMDYzLjk0N2wtNi4xMjQgMS41OGEyIDIgMCAwIDAtMS40MzggMS40MzVsLTEuNTc5IDYuMTI2YS41LjUgMCAwIDEtLjk0Ny4wNjN6Ii8+PC9zdmc+')
 }
