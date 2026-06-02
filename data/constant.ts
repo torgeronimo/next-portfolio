@@ -39,7 +39,7 @@ export const aboutInfo: AboutInfo[] =[
     {
         title: "CONTACT",
         desc: "Email: victorgeronimod@gmail.com",
-        subdesc: "Phone: 0966-123-4567"
+        subdesc: "Phone: +63 966-123-4567"
     }
     
 ]

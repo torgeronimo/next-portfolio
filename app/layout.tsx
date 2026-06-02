@@ -7,6 +7,7 @@ import Preloader from "./components/ui/Preloader";
 import ScrollProgress from "./components/ui/scrollprogress";
 import { Scroll } from "lucide-react";
 
+
 const dmSans = DM_Sans({
   weight: ['300','400', '500'], // DM Sans requires explicit weights
   subsets: ['latin'],
@@ -41,6 +42,7 @@ export default function RootLayout({
     >
       
       <body>
+        
         <header className="sticky top-0 z-50">
           <ScrollProgress/>
           <Navbar/>
@@ -52,6 +54,7 @@ export default function RootLayout({
         
         <Footer/>
       </body>
+      
     </html>
   );
 }
