@@ -132,6 +132,11 @@ section{
   letter-spacing: var(--tracking-mono-md);
   color: var(--text-muted);
 }
+.mono{
+  font-family: var(--font-mono);
+  font-weight: var(--weight-light);
+  letter-spacing: var(--tracking-mono-md);
+}
 .mono-label{
   font-family: var(--font-mono);
   font-size: var(--text-mono-sm);

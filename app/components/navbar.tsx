@@ -16,30 +16,54 @@ const Navbar = () => {
     const [activeSection, setActiveSection] = useState("");
     const [menuOpen, setMenuOpen] = useState(false);
 
-    // Active section tracking
     useEffect(() => {
-        const handleScroll = () => {
-        const scrollPosition = window.scrollY + 100;
+        const sections = document.querySelectorAll('section[id]')
 
-        sections.forEach((section) => {
-            const element = document.getElementById(section);
-            if (!element) return;
-
-            const offsetTop = element.offsetTop;
-            const height = element.offsetHeight;
-
-            if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + height
-            ) {
-            setActiveSection(section);
+        const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                setActiveSection(entry.target.id)
             }
-        });
-        };
+            })
+        },
+        {
+            rootMargin: '-40% 0px -45% 0px',
+            threshold: 0,
+        }
+        )
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+        sections.forEach((section) => observer.observe(section))
+
+        return () => {
+        observer.disconnect()
+        }
+    }, [])
+
+    // Active section tracking
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //     const scrollPosition = window.scrollY + 100;
+
+    //     sections.forEach((section) => {
+    //         const element = document.getElementById(section);
+    //         if (!element) return;
+
+    //         const offsetTop = element.offsetTop;
+    //         const height = element.offsetHeight;
+
+    //         if (
+    //         scrollPosition >= offsetTop &&
+    //         scrollPosition < offsetTop + height
+    //         ) {
+    //         setActiveSection(section);
+    //         }
+    //     });
+    //     };
+
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => window.removeEventListener("scroll", handleScroll);
+    // }, []);
 
     return (
         <nav className="sticky top-0 z-50 w-full bg-white shadow-md">
@@ -86,7 +110,8 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <ul className="md:hidden flex flex-col bg-white shadow-md border-t">
+                
+                <ul className="absolute left-0 w-full md:hidden flex flex-col bg-white shadow-md border-t z-50 overflow-hidden transition-all duration-300 ease-in-out">
                 {sections.map((section) => (
                     <li key={section}>
                     <a
@@ -103,6 +128,7 @@ const Navbar = () => {
                     </li>
                 ))}
                 </ul>
+
             )}
         </nav>
     );

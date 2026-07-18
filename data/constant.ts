@@ -177,3 +177,13 @@ export const certifications: CertificationInfo[] = [
         href: "https://www.linkedin.com/in/vgmdelacruz/details/certifications/",
     }
 ]
+
+export const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+        element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        })
+    }
+}
