@@ -7,7 +7,7 @@ type AboutInfo = {
 }
 type SkillInfo = {
     title: string;
-    skills: string[];
+    skills?: string[];
     subSkills?:string[];
 }
 
@@ -47,33 +47,31 @@ export const aboutInfo: AboutInfo[] =[
 export const skillInfo: SkillInfo[] =  [
     {
         title: "CORE",
-        skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js"],
+        skills: ["HTML", "CSS", "JavaScript", "TypeScript"],
+        subSkills:["C#", ".NET", "Python"]
+    },
+    {
+        title: "FRONT-END & LIBRARIES",
+        skills: ["React", "NextJS", "SCSS", "Tailwind", "Bootstrap", "React Hook Form", "ZOD"],
+        subSkills:["Framer","GSAP"]
+    },
+    {
+        title: "BACK-END & DATABASE",
+        skills: ["Node.js", "Express","Supabase", "MongoDB", "SQL","PostgreSQL"],
         subSkills:["Hello World"]
     },
     {
-        title: "FRAMEWORKS",
-        skills: ["Tailwind CSS", "Bootstrap", "Material-UI"],
+        title: "DESIGN & DEV TOOLS",
+        skills: ["Figma", "Git", "GitHub", "VS Code", "Postman", "Lighthouse","Vercel","Claude"],
         subSkills:["Hello World"]
     },
     {
-        title: "BACK-END & DATA",
-        skills: ["Node.js", "Express", "MongoDB", "SQL"],
-        subSkills:["Hello World"]
+        title: "WEB DEVELOPMENT CONCEPTS",
+        skills: ["REST API","Responsive Design","SEO",  "Performance Optimization", "Agile Methodology", "DRY"]
     },
     {
-        title: "DESIGN & TOOLS",
-        skills: ["Figma", "Adobe Photoshop", "Git", "GitHub", "VS Code"],
-        subSkills:["Hello World"]
-    },
-    {
-        title: "CONCEPTS",
-        skills: ["Responsive Design", "Cross-Browser Compatibility", "Performance Optimization", "Accessibility", "SEO"],
-        subSkills:["Hello World"]
-    },
-    {
-        title: "OTHER",
-        skills: ["Node.js", "Express", "MongoDB", "Python", "Django"],
-        subSkills:["Hello World"]
+        title: "LEARNING & EXPLORING",
+        subSkills: ["Webflow", "WordPress", "Shopify", "Three.js"],
     },
 ]
 

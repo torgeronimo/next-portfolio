@@ -1,8 +1,9 @@
 "use client";
 import {useState, useEffect} from 'react';
 import Image from "next/image";
-import {ButtonDark, ButtonLight} from "./ui/button";
+import {ButtonDark, ButtonLight} from "../ui/button";
 import { MoveRight, SendHorizontal} from "lucide-react";
+import { scrollToSection } from "@/data/constant";
 
 
 const Hero = () => {
@@ -41,8 +42,8 @@ const Hero = () => {
                         I design and build fast, accessible, and scalable web applications that combine clean code with thoughtful user experiences.
                     </p>
                     <div className="flex gap-6">
-                        <ButtonDark text="View my work" href="#projects" icon={MoveRight}/>
-                        <ButtonLight text="Get in touch" href="#contact" />
+                        <ButtonDark text="View my work" onClick={() => scrollToSection("projects")} icon={MoveRight}/>
+                        <ButtonLight text="Get in touch" onClick={() => scrollToSection("contact")} />
                     </div>
                 </div>
                 <div className="grid-span-1 flex items-center justify-center order-1 md:order-2">

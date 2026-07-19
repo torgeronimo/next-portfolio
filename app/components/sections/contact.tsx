@@ -1,4 +1,4 @@
-import { ButtonDark } from "./ui/button";
+import { ButtonDark } from "../ui/button";
 import { MoveRight, SendHorizontal, Home} from "lucide-react";
 import Link from "next/link";
 const Contact = () => {

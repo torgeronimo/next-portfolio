@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { TextAlignJustify, X } from "lucide-react";
+import { scrollToSection } from "@/data/constant";
 
 const sections = [
     "about",
@@ -70,7 +71,7 @@ const Navbar = () => {
             <div className="relative max-w-7xl mx-auto h-16 flex items-center justify-between px-4">
                 
                 {/* Logo */}
-                <a href="#" className="select-none logo">
+                <a onClick={() => scrollToSection("hero")} className="select-none logo">
                 VG.
                 </a>
                 
@@ -94,8 +95,8 @@ const Navbar = () => {
                 {sections.map((section) => (
                     <li key={section}>
                     <a
-                        href={`#${section}`}
-                        className={`transition-colors ${
+                        onClick={() => scrollToSection(section)}
+                        className={`transition-colors font-mono ${
                         activeSection === section
                             ? "text-black font-semibold"
                             : "text-gray-500 hover:text-black"
@@ -111,7 +112,7 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {menuOpen && (
                 
-                <ul className="absolute left-0 w-full md:hidden flex flex-col bg-white shadow-md border-t z-50 overflow-hidden transition-all duration-300 ease-in-out">
+                <ul className="absolute font-mono left-0 w-full md:hidden flex flex-col bg-white shadow-md border-t z-50 overflow-hidden transition-all duration-300 ease-in-out">
                 {sections.map((section) => (
                     <li key={section}>
                     <a
