@@ -7,8 +7,10 @@ const About = () => {
                     
                     <div className="grid-span 1 order-2 md:order:1">
                         <p className="text-body">
-                            I&apos;m a versatile web developer with hands-on experience building websites and web applications from the ground up. I take pride in translating Figma designs into pixel-perfect, fully functional products.<br/><br/>
-                            I&apos;ve worked within cross-functional teams using Agile methodologies, and I&apos;m always staying current with the latest in the industry. I leverage AI tools to enhance my workflow while staying grounded in solid fundamentals.
+                            {/* I&apos;m a versatile web developer with hands-on experience building websites and web applications from the ground up. I take pride in translating Figma designs into pixel-perfect, fully functional products.<br/><br/>
+                            I&apos;ve worked within cross-functional teams using Agile methodologies, and I&apos;m always staying current with the latest in the industry. I leverage AI tools to enhance my workflow while staying grounded in solid fundamentals. */}
+                            I&apos;m a web developer who enjoys turning ideas into polished digital products. Whether I&apos;m building from scratch or bringing a Figma design to life, I genuinely enjoy solving problems and paying attention to the little details that make an interface feel intuitive. <br/><br/>
+                            I enjoy collaborating with teams, learning new technologies, and continuously improving my workflow. AI has become a valuable part of my toolkit, helping me move faster while I stay focused on writing clean, maintainable code and delivering quality work.
                         </p>
                     </div>
                     

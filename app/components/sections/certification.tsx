@@ -3,7 +3,7 @@ import { certifications } from "@/data/constant";
 
 const Certification = () => {
     return (
-        <section className="flex flex-col gap-4" id="certifications">
+        <section className="flex flex-col gap-4" id="certification">
             <h2 className="section-title pb-6">Certifications</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
                 
