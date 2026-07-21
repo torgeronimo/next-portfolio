@@ -58,12 +58,12 @@ export const skillInfo: SkillInfo[] =  [
     {
         title: "BACK-END & DATABASE",
         skills: ["Node.js", "Express","Supabase", "MongoDB", "SQL","PostgreSQL"],
-        subSkills:["Hello World"]
+
     },
     {
         title: "DESIGN & DEV TOOLS",
         skills: ["Figma", "Git", "GitHub", "VS Code", "Postman", "Lighthouse","Vercel","Claude"],
-        subSkills:["Hello World"]
+
     },
     {
         title: "WEB DEVELOPMENT CONCEPTS",
@@ -77,53 +77,73 @@ export const skillInfo: SkillInfo[] =  [
 
 export const featuredProjects = [
     {
-        slug:  "shopflow",
+        slug:  "emeraldsprings",
         num:   "01",
+        href:"https://www.emeraldsprings.online/",
         label: "Live",
-        title: "ShopFlow — E-commerce Platform",
-        desc:  "A full-stack e-commerce application built for a local retail brand. Features a dynamic product catalogue, real-time inventory, cart with Stripe checkout, and a custom admin dashboard with sales analytics.",
-        tags:  ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind"],
-        img: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        statusColor: "emerald",
+        title: "Emerald Springs",
+        desc:  " is a modern website for a luxury resort showcase. It features a clean design, smooth animations, and an interactive layout that lets clients browse the resort's premium features, amenities, and rooms.",
+        tags:  ["Next.js", "Typescript", "Tailwind", "GSAP", "Resend"],
+        img: "/images/emeraldsprings.png"
+        
     },
     {
-        slug:  "kanbanph",
+        slug:  "ymshoecleaning",
         num:   "02",
+        href:"https://www.ymshoecleaning.store/",
         label: "Live",
-        title: "KanbanPH — Task Management App",
-        desc:  "A Notion-inspired productivity tool with drag-and-drop kanban boards, real-time collaboration, and team workspaces. Built with Next.js and Supabase for instant data sync.",
-        tags:  ["Next.js", "TypeScript", "Supabase", "Tailwind", "Framer Motion"],
-        img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        statusColor: "emerald",
+        title: "YM Shoe Cleaning",
+        desc:  "YM Shoe Cleaning is a business showcase website for a professional footwear care service. It allows customers to explore available cleaning packages, find physical store branches, and book appointments directly through the platform.",
+        tags:  ["Next.js", "TypeScript","Tailwind","GSAP","ZOD", "React Hook Form","Resend"],
+        img: "/images/ymshoeclean.png"
+    },
+    {
+        slug:  "AptSys",
+        num:   "03",
+        href:"https://www.aptsys.online/login",
+        label: "Ongoing | Open Beta",
+        statusColor: "orange",
+        title: "Apartment Management System",
+        desc:  "AptSys is my personal project, a cloud-based apartment management system designed for landlords. It simplifies property management by allowing landlords to register, input tenant records, and track monthly bills for easy management anytime and anywhere.",
+        tags:  ["React", "TypeScript","Nodejs","Tailwind", "Supabase", "Chartjs"],
+        img: "/images/aptsys.png "
     },
 ];
 
 export const miniProjects = [
     {
-        slug:  "hr-system",
-        num:   "03",
-        title: "Internal HR System",
-        desc:  "C# .NET backend with a React frontend for employee management, leave tracking, and payroll reporting across 3 branches.",
-        tags:  ["C#", ".NET", "React"],
-    },
-    {
-        slug:  "weather",
+        slug:  "rickandmortyexplorer",
         num:   "04",
-        title: "Weather Dashboard",
-        desc:  "Minimal weather app showing 7-day forecasts, UV index, and air quality using OpenWeather API and Chart.js visualisations.",
-        tags:  ["Vue.js", "Chart.js"],
+        href:"https://www.rickandmortyexplorer.space/",
+        title: "Rick and Morty Explorer",
+        desc:  "Rick and Morty Explorer is a web application that allows users to browse and search characters, episodes, and locations from the Rick and Morty universe. This project focuses on efficient data fetching, dynamic routing, and presenting deep lore in a clean, easily searchable interface.",
+        tags:  ["Nextjs", "Typescript","Tailwind","TanStack","NodeJs"],
     },
     {
-        slug:  "portfolio-template",
+        slug:  "Bloc",
         num:   "05",
-        title: "Dev Portfolio Template",
-        desc:  "Open-source, customisable portfolio template for developers. 300+ GitHub stars, widely forked and adapted.",
-        tags:  ["HTML/CSS", "Open Source"],
+        href:"https://bloc-landing-two.vercel.app",
+        title: "Bloc",
+        desc:  "BLOC is a personal portfolio project designed as a fast, no-nonsense project management app for teams that ship. This simulation combines Kanban boards, sprint planning, and time tracking into a loud, distraction-free workspace concept built to show how modern product teams manage workflow.",
+        tags:  ["Nextjs", "Typescript", "Tailwind"],
     },
     {
-        slug:  "pos",
+        slug:  "Brutehaus",
         num:   "06",
-        title: "POS & Inventory System",
-        desc:  "Point-of-sale system with live stock tracking, barcode scanning, receipt printing, and end-of-day sales reporting.",
-        tags:  ["Electron", "SQLite"],
+        href:"https://brutehaus.vercel.app/",
+        title: "Brutehaus",
+        desc:  "Brutehaus is a professional company profile landing website designed to showcase a modern brand's identity, services, and creative work. Built as a design-forward personal project, it focuses on striking visual hierarchy and smooth user journeys to present corporate capabilities effectively.",
+        tags:  ["Nextjs", "Typescript", "Tailwind"],
+    },
+    {
+        slug:  "Blooms",
+        num:   "07",
+        href:"https://blooms-project-five.vercel.app",
+        title: "Blooms",
+        desc:  "Blooms is a boutique flower shop website built to convert a high-fidelity Figma design into a pixel-perfect web application. This showcase platform allows users to browse seasonal floral arrangements, explore custom bouquets, and easily contact the shop for orders.",
+        tags:  ["NextJS", "Typescript","Tailwind"],
     },
 ];
 
