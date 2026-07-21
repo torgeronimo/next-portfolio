@@ -107,7 +107,7 @@ export const featuredProjects = [
         statusColor: "orange",
         title: "Apartment Management System",
         desc:  "AptSys is my personal project, a cloud-based apartment management system designed for landlords. It simplifies property management by allowing landlords to register, input tenant records, and track monthly bills for easy management anytime and anywhere.",
-        tags:  ["React", "TypeScript","Nodejs","Tailwind", "Supabase", "Chartjs"],
+        tags:  ["React", "TypeScript","Nodejs","Tailwind", "Supabase", "Chartjs", "OAuth"],
         img: "/images/aptsys.png"
     },
 ];
