@@ -39,7 +39,7 @@ export const aboutInfo: AboutInfo[] =[
     {
         title: "CONTACT",
         desc: "Email: victorgeronimod@gmail.com",
-        subdesc: "Phone: +63 966-123-4567"
+        subdesc: "Phone: +63 906 743 8406"
     }
     
 ]
@@ -53,7 +53,7 @@ export const skillInfo: SkillInfo[] =  [
     {
         title: "FRONT-END & LIBRARIES",
         skills: ["React", "NextJS", "SCSS", "Tailwind", "Bootstrap", "React Hook Form", "ZOD"],
-        subSkills:["Framer","GSAP"]
+        subSkills:["Framer","GSAP","Angular"]
     },
     {
         title: "BACK-END & DATABASE",
