@@ -103,7 +103,7 @@ section{
 .logo{
   font-family: var(--font-serif);
   font-size: var(--text-section);
-  font-weight: var(--weight-medium);
+  font-weight: bold;
   letter-spacing: var(--tracking-snug);
 }
 .section-title{
