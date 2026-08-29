@@ -169,7 +169,7 @@ export const posts = [
 
 export const certifications: CertificationInfo[] = [
     {
-        title: "ComnpTIA A+ Certification",
+        title: "CompTIA A+ Certification",
         subtitle: "COMPTIA",
         issuer: "Fit Academy",
         date: "2022",
