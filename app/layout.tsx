@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Mono, DM_Serif_Display} from "next/font/google";
 import "./globals.css";
-import Footer from "./components/footer"
-import Navbar from "./components/navbar";
+import Footer from "./components/layout/footer"
+import Navbar from "./components/layout/navbar";
 import Preloader from "./components/ui/Preloader";
 import ScrollProgress from "./components/ui/scrollprogress";
 import { Scroll } from "lucide-react";
+
 
 const dmSans = DM_Sans({
   weight: ['300','400', '500'], // DM Sans requires explicit weights
@@ -25,7 +26,7 @@ const dmSerif = DM_Serif_Display({
   variable: '--font-dm-serif',
 });
 export const metadata: Metadata = {
-  title: "Victor Geronimo",
+  title: "Victor Geronimo | Web Developer",
   description: "Web developer specializing in Next.js, React, TypeScript, and modern web experiences.",
 };
 
@@ -41,6 +42,7 @@ export default function RootLayout({
     >
       
       <body>
+        
         <header className="sticky top-0 z-50">
           <ScrollProgress/>
           <Navbar/>
@@ -52,6 +54,7 @@ export default function RootLayout({
         
         <Footer/>
       </body>
+      
     </html>
   );
 }
