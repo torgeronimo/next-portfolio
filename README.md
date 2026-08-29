@@ -1,36 +1,168 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌟 Victor Geronimo Delacruz
 
-## Getting Started
+### Front-End Developer • UI Enthusiast • Problem Solver
 
-First, run the development server:
+Hello! I'm Victor, a developer based in Calamba, Laguna, Philippines, with a strong interest in front-end development, clean UI, and building modern digital experiences with React and Next.js.
+
+I hold a B.S. in Information Technology from Mapua Malayan Colleges Laguna, and I enjoy turning ideas into polished, user-friendly web experiences that are both functional and visually engaging.
+
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+</div>
+
+---
+
+## 👨‍💻 About Me
+
+- 🎓 Education: B.S. Information Technology, Mapua Malayan Colleges Laguna
+- 📍 Location: Calamba, Laguna, Philippines
+- 💡 Focus: Front-end development, React / Next.js, responsive UI, performance, and user experience
+- 📩 Email: victorgeronimod@gmail.com
+- 📞 Phone: +63 906 743 8406
+
+I love building thoughtful interfaces, experimenting with modern web technologies, and creating experiences that balance aesthetics with usability.
+
+---
+
+## 🛠️ Tech Stack
+
+### Core
+- HTML
+- CSS
+- JavaScript
+- TypeScript
+- C#
+- .NET
+- Python
+
+### Front-End & Libraries
+- React
+- Next.js
+- SCSS
+- Tailwind CSS
+- Bootstrap
+- React Hook Form
+- Zod
+- Framer Motion
+- GSAP
+- Angular
+
+### Back-End & Database
+- Node.js
+- Express
+- Supabase
+- MongoDB
+- SQL
+- PostgreSQL
+
+### Design & Tools
+- Figma
+- Git
+- GitHub
+- VS Code
+- Postman
+- Lighthouse
+- Vercel
+- Claude
+
+### Web Concepts
+- REST API
+- Responsive Design
+- SEO
+- Performance Optimization
+- Agile Methodology
+- DRY Principles
+
+---
+
+## 🚀 Featured Projects
+
+### 1. Emerald Springs
+A luxury resort website with a premium feel, smooth transitions, and a modern user-friendly layout for showcasing amenities and room offerings.
+
+- Stack: Next.js, TypeScript, Tailwind, GSAP, Resend
+- Live: https://www.emeraldsprings.online/
+
+### 2. YM Shoe Cleaning
+A business showcase platform for a shoe cleaning service, featuring package information, branch details, and direct appointment booking flows.
+
+- Stack: Next.js, TypeScript, Tailwind, GSAP, Zod, React Hook Form, Resend
+- Live: https://www.ymshoecleaning.store/
+
+### 3. AptSys
+A cloud-based apartment management system designed for landlords to manage tenant records, monthly billing, and property operations efficiently.
+
+- Stack: React, TypeScript, Node.js, Tailwind, Supabase, Chart.js, OAuth
+- Status: Ongoing | Open Beta
+- Live: https://www.aptsys.online/login
+
+### 4. Rick and Morty Explorer
+A dynamic exploration app for browsing characters, episodes, and locations from the Rick and Morty universe with clean and efficient UI interactions.
+
+- Stack: Next.js, TypeScript, Tailwind, TanStack, Node.js
+- Live: https://www.rickandmortyexplorer.space/
+
+---
+
+## 📚 Certifications
+
+- CompTIA A+ Certification
+- CCNA Routing and Switching
+- AWS Backup Support for Amazon S3
+- More on my LinkedIn profile
+
+---
+
+## ✍️ Writing & Interests
+
+I also enjoy writing about web development, UX, and clean front-end practices. My work and articles reflect a focus on simple architecture, performance, and building interfaces that feel intuitive.
+
+- Medium: https://medium.com/@victorgeronimod
+
+---
+
+## 📈 Portfolio Snapshot
+
+This portfolio was built with Next.js and designed to showcase:
+
+- ✨ Personal branding and portfolio storytelling
+- 🧩 Custom sections for skills, projects, certifications, and blog content
+- 💻 Responsive UI for desktop and mobile experiences
+- 🚀 Modern front-end practices with a clean code structure
+
+---
+
+## ▶️ Run This Project Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📬 Let’s Connect
 
-To learn more about Next.js, take a look at the following resources:
+If you’d like to collaborate, work together, or talk about front-end development, design, and product ideas, feel free to reach out:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Email: victorgeronimod@gmail.com
+- Phone: +63 906 743 8406
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> “I build digital experiences that are clean, functional, and memorable.”
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p align="center">
+  <strong>Built with ❤️ by Victor Geronimo Delacruz</strong>
+</p>
