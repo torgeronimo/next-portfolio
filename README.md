@@ -137,21 +137,6 @@ This portfolio was built with Next.js and designed to showcase:
 
 ---
 
-## ▶️ Run This Project Locally
-
-```bash
-npm install
-npm run dev
-```
-
-Then open:
-
-```bash
-http://localhost:3000
-```
-
----
-
 ## 📬 Let’s Connect
 
 If you’d like to collaborate, work together, or talk about front-end development, design, and product ideas, feel free to reach out:
