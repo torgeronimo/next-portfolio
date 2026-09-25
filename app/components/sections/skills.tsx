@@ -16,7 +16,7 @@ const Skills = () => {
                     <div key={s.title} className="card hover:-translate-y-1 border border-(--border) hover:border-[#C0BAB0] hover:shadow-lg transition-all duration-200">
                         <h3 className="label pb-2">{s.title}</h3>
                         <div className="tag-container flex flex-wrap gap-2 mt-2">
-                            {s.skills.map((t)=>(
+                            {s.skills?.map((t)=>(
                                 <span key={t} className="tag">{t}</span>
                             ))}
                             {s.subSkills?.map((sub)=>(
