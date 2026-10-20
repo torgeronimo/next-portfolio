@@ -40,7 +40,7 @@ const Contact = () => {
                 </div>
                 <h3 className="contact-headline max-w-lg">Let&apos;s build something <span className="text-(--text-muted)">together.</span></h3>
                 <p className="text-body max-w-sm">Open to new opportunities, freelance work, or just a conversation about what you&apos;re building.</p>
-                <ButtonDark href="mailto:victorgeronimod@gmail.com" text="Send me an email" icon={SendHorizontal} />
+                <ButtonDark href="mailto:victorgeronimodc@gmail.com" text="Send me an email" icon={SendHorizontal} />
                 
                 <div className="flex flex-col items-center justify-center">
 
