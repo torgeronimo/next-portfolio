@@ -1,4 +1,4 @@
-# 🌟 Victor Geronimo Delacruz
+# 🌟 Victor Geronimo Dela Cruz
 
 ### Front-End Developer • UI Enthusiast • Problem Solver
 
@@ -22,8 +22,8 @@ I hold a B.S. in Information Technology from Mapua Malayan Colleges Laguna, and 
 - 🎓 Education: B.S. Information Technology, Mapua Malayan Colleges Laguna
 - 📍 Location: Calamba, Laguna, Philippines
 - 💡 Focus: Front-end development, React / Next.js, responsive UI, performance, and user experience
-- 📩 Email: victorgeronimod@gmail.com
-- 📞 Phone: +63 906 743 8406
+- 📩 Email: victorgeronimodc@gmail.com
+- 📞 Phone: +63 961 771 2769
 
 I love building thoughtful interfaces, experimenting with modern web technologies, and creating experiences that balance aesthetics with usability.
 
@@ -141,13 +141,13 @@ This portfolio was built with Next.js and designed to showcase:
 
 If you’d like to collaborate, work together, or talk about front-end development, design, and product ideas, feel free to reach out:
 
-- Email: victorgeronimod@gmail.com
-- Phone: +63 906 743 8406
+- Email: victorgeronimodc@gmail.com
+- Phone: +63 961 771 2769
 
 > “I build digital experiences that are clean, functional, and memorable.”
 
 ---
 
 <p align="center">
-  <strong>Built with ❤️ by Victor Geronimo Delacruz</strong>
+  <strong>Built with ❤️ by Victor Geronimo Dela Cruz</strong>
 </p>

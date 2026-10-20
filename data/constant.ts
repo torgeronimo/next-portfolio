@@ -113,6 +113,7 @@ export const featuredProjects = [
 ];
 
 export const miniProjects = [
+    
     {
         slug:  "rickandmortyexplorer",
         num:   "04",
@@ -144,6 +145,14 @@ export const miniProjects = [
         title: "Blooms",
         desc:  "Blooms is a boutique flower shop website built to convert a high-fidelity Figma design into a pixel-perfect web application. This showcase platform allows users to browse seasonal floral arrangements, explore custom bouquets, and easily contact the shop for orders.",
         tags:  ["NextJS", "Typescript","Tailwind"],
+    },
+    {
+        slug:  "F1-Showcase",
+        num:   "08",
+        href:"https://f1-showcase-rb-19.vercel.app/",
+        title: "F1-Showcase",
+        desc:  "F1-Showcase-RB19 is a professional project showcase landing website designed to highlight Formula 1 metrics, team data, and the RB19 car's identity. Built as a design-forward personal project, it focuses on striking visual hierarchy and smooth user journeys to present racing statistics and engineering capabilities effectively.",
+        tags:  ["React", "Three.js","R3F", "GSAP","TailwindCSS"],
     },
 ];
 
